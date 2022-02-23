@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FC } from 'react'
+import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom'
+import './assets/common.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import WebView from './view/WebView'
+import MobileView from './view/MobileView';
+
+const App : FC = () => {
+	return (
+		<Router>
+			<div>
+				<Switch>
+					<Route exact path="/competition_detail" 
+						component={document.body.clientWidth <= 750  ? MobileView : WebView}
+					/>
+					<Redirect from="/" to="/competition_detail" />
+				</Switch>
+			</div>
+		</Router>
+	)
 }
 
-export default App;
+export default App
