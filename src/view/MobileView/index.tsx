@@ -450,18 +450,18 @@ const MobileView : FC = () => {
               <div className={`${styles.mod16} flex-col align-center`}>
                 <div className={`${styles.wrap2}`}>
                   <span className={`${styles.paragraph16}`}>
-                    2022全球人工智能技术创新大赛（以下简称“大赛”）是由中国人
+                    2022全球人工智能技术创新大赛-算法挑战赛由中国人工智能学会、
                     <br />
                   </span>
                   <span className={`${styles.paragraph17}`}>
-                    工智能学会和杭州市余杭区人民政府共同创办，由杭州未来科技城
+                    杭州市人民政府主办，杭州市余杭区人民政府承办，浙江杭州未来
                     <br />
-                    管委会和京东零售联合承办。大赛将立足国际视野，聚焦前沿科技
+                    科技城管委会和京东零售具体承办。大赛将立足国际视野，聚焦前
                     <br />
-                    与应用创新，推进人工智能领域的学术交流、人才培养、技术发展
+                    沿科技与应用创新，推进人工智能领域的学术交流、人才培养、技
                     <br />
                   </span>
-                  <span className={`${styles.info16}`}>以及跨界应用与融合，打造人工智能的人才交流平台与产业生态圈。</span>
+                  <span className={`${styles.info16}`}>术发展以及跨界应用与融合,打造人工智能的人才交流平台与产业生<br />态圈。</span>
                 </div>
               </div>
               <div className={`${styles.mod17}`}>
@@ -567,7 +567,7 @@ const MobileView : FC = () => {
                   <span className={`${styles.info24}`}>2月25日&nbsp;–&nbsp;4月21日</span>
                   <span className={`${styles.word39}`}>3月22日&nbsp;–&nbsp;4月22日</span>
                   <span className={`${styles.txt18}`}>4月29日&nbsp;–&nbsp;5月21日</span>
-                  <span className={`${styles.word40}`}>6月中下旬</span>
+                  <span className={`${styles.word40}`}>11月26日</span>
                 </div>
               </div>
             </div>

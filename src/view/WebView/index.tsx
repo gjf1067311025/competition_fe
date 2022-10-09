@@ -229,9 +229,11 @@ const WebView : FC = () => {
           </div>
         </div>
         <span className={`${styles.infoBox2}`}>
-          2022全球人工智能技术创新大赛（以下简称“大赛”）是由中国人工智能学会和杭州市余杭区人民政府共同创办，由杭州未来科技城管委会和京东零售联合承办。大赛
+          2022全球人工智能技术创新大赛-算法挑战赛由中国人工智能学会、杭州市人民政府主办，杭州市余杭区人民政府承办，浙江杭州未来科技城管委会和京东零售具体承
           <br />
-          将立足国际视野，聚焦前沿科技与应用创新，推进人工智能领域的学术交流、人才培养、技术发展以及跨界应用与融合，打造人工智能的人才交流平台与产业生态圈。
+          办。大赛将立足国际视野，聚焦前沿科技与应用创新，推进人工智能领域的学术交流、人才培养、技术发展以及跨界应用与融合,打造人工智能的人才交流平台与产业
+          <br />
+          生态圈。
           <br />
           <br />
         </span>
@@ -337,7 +339,7 @@ const WebView : FC = () => {
           <div className={`${styles.layer16} flex-row`}>
             <span className={`${styles.word21}`}>3月22日&nbsp;–&nbsp;4月22日</span>
             <span className={`${styles.word22}`}>4月29日&nbsp;–&nbsp;5月21日</span>
-            <span className={`${styles.word23}`}>6月中下旬</span>
+            <span className={`${styles.word23}`}>11月26日</span>
           </div>
           <div className={`${styles.layer17} flex-row`}>
             <div className={`${styles.bd9} flex-col justify-center`}>
