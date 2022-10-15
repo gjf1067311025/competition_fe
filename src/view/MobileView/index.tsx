@@ -5,14 +5,14 @@ import React, { FC, useEffect, useState } from 'react';
 
 import styles from './assets/index.module.css';
 
-const MobileView : FC = () => {
+const MobileView: FC = () => {
   const [selectedKey, setSelectedKey] = useState<any>('COMPETITION');
 
-  useEffect(()=> {
+  useEffect(() => {
     var element = document.getElementById(selectedKey);
-    if(element)
+    if (element)
       element.scrollIntoView();
-  },[selectedKey])
+  }, [selectedKey])
 
   return (
     <div className={`${styles.page} flex-col`}>
@@ -43,7 +43,7 @@ const MobileView : FC = () => {
         <div className={`${styles.block3} flex-col`}>
           <div className={`${styles.group2} flex-col`}>
             <div className={`${styles.group3} flex-col`}>
-              <div className={`${styles.block4} flex-row justify-between`}>
+              {/* <div className={`${styles.block4} flex-row justify-between`}>
                 <div className={`${styles.bd1} flex-col`} />
                 <img
                   className={`${styles.img2}`}
@@ -51,7 +51,7 @@ const MobileView : FC = () => {
                     require('./assets/img/psoybsnygkyicv21put26oso4m31yub25e8bbf-6373-428b-b1f7-fd65fbec8f22.png')
                   }
                 />
-              </div>
+              </div> */}
             </div>
             <div className={`${styles.group4} flex-col`}>
               <div className={`${styles.outer1} flex-col`}>
@@ -94,7 +94,7 @@ const MobileView : FC = () => {
                     </span>
                     <span className={`${styles.txt1}`}>关联程度来判断两者是否匹配</span>
                   </div>
-                  <div className={`${styles.outer8} flex-col`} onClick={()=>{
+                  <div className={`${styles.outer8} flex-col`} onClick={() => {
                     window.open(`https://www.heywhale.com/home/competition/620b34c41f3cf500170bd6ca`)
                   }}>
                     <span className={`${styles.info2}`}>报名入口</span>
@@ -118,7 +118,7 @@ const MobileView : FC = () => {
                     </span>
                     <span className={`${styles.txt2}`}>的实体</span>
                   </div>
-                  <div className={`${styles.outer8} flex-col`} onClick={()=>{
+                  <div className={`${styles.outer8} flex-col`} onClick={() => {
                     window.open(`https://www.heywhale.com/home/competition/620b34ed28270b0017b823ad`)
                   }}>
                     <span className={`${styles.info2}`}>报名入口</span>
@@ -402,12 +402,18 @@ const MobileView : FC = () => {
                   require('./assets/img/psfnhx1hak35ly12qzmgqmr0leb4e7bfj3d625297-b415-4324-8f85-970149ca80ba.png')
                 }
               />
+              <img
+                className={`${styles.img6_1}`}
+                src={
+                  require('./assets/img/ps9n14pbcdforgv33e0zoqvuh0h0q7edlcm2521caac-0ce7-47bb-adf9-5e5d7e852d3b.png')
+                }
+              />
             </div>
             <div className={`${styles.main4} flex-row`}>
-              <div className={`${styles.main5} flex-col`} onClick={()=>{
+              <div className={`${styles.main5} flex-col`} onClick={() => {
                 var element = document.getElementById('SETUP');
-                if(element)
-                  element.scrollIntoView({behavior: 'smooth', block: 'center'});
+                if (element)
+                  element.scrollIntoView({ behavior: 'smooth', block: 'center' });
               }}>
                 <span className={`${styles.word31}`}>报名参赛</span>
               </div>
@@ -424,7 +430,7 @@ const MobileView : FC = () => {
                 <span className={`${styles.info15}`}>2022</span>
                 <div className={`${styles.bd11} flex-col`} />
                 <span className={`${styles.paragraph14}`}>
-                  GLOBAL&nbsp;AI
+                  HANGZHOU GLOBAL&nbsp;AI
                   <br />
                   INNOVATION&nbsp;CONTEST
                 </span>
@@ -432,7 +438,7 @@ const MobileView : FC = () => {
             </div>
           </div>
           <span className={`${styles.paragraph15}`}>
-            全球人工智能技术
+            杭州全球人工智能技术
             <br />
             创新大赛&nbsp;
           </span>

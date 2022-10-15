@@ -294,7 +294,7 @@
   overflow-wrap: break-word;
   color: rgba(255, 255, 255, 1);
   font-size: 23px;
-  font-family: PingFang-SC-Regular;
+  font-family: JDLangZhengTi;
   text-align: left;
   line-height: 37px;
   white-space: nowrap;
@@ -1748,7 +1748,7 @@
 .pic5 {
   z-index: 30;
   position: absolute;
-  left: 505px;
+  left: 625px;
   top: 41px;
   width: 75px;
   height: 40px;
@@ -1779,6 +1779,11 @@
 .img6 {
   width: 205px;
   height: 45px;
+}
+.img6_1 {
+  width: 45px;
+  height: 45px;
+  margin-left: 20px;
 }
 
 .main4 {
@@ -1819,10 +1824,11 @@
   overflow-wrap: break-word;
   color: rgba(255, 255, 255, 1);
   font-size: 26px;
-  font-family: JDLANGZHENGTI-SL--GBK1-0;
+  font-family: JDLangZhengTi;
   text-align: left;
   white-space: nowrap;
   line-height: 26px;
+  letter-spacing: 3vw;
   display: block;
 }
 
@@ -1914,8 +1920,8 @@
   height: 133px;
   overflow-wrap: break-word;
   color: rgba(255, 255, 255, 1);
-  font-size: 74px;
-  font-family: JDLANGZHENGTI-SB--GBK1-0;
+  font-size: 64px;
+  font-family: JDLangZhengTi;
   text-align: left;
   white-space: nowrap;
   line-height: 100px;

@@ -5,14 +5,14 @@ import React, { FC, useEffect, useState } from 'react';
 
 import styles from './assets/index.module.css';
 
-const WebView : FC = () => {
+const WebView: FC = () => {
   const [selectedKey, setSelectedKey] = useState<any>('COMPETITION');
 
-  useEffect(()=> {
+  useEffect(() => {
     var element = document.getElementById(selectedKey);
-    if(element)
-      element.scrollIntoView({behavior:'smooth'});
-  },[selectedKey])
+    if (element)
+      element.scrollIntoView({ behavior: 'smooth' });
+  }, [selectedKey])
 
   return (
     <div className={`${styles.page} flex-col`}>
@@ -33,13 +33,19 @@ const WebView : FC = () => {
                   <div className={`${styles.bd2} flex-col`} />
                 </div>
                 <span className={`${styles.info2}`}>算法挑战赛</span>
-                <div className={`${styles.block3} flex-col`} onClick={()=>{
+                <div className={`${styles.block3} flex-col`} onClick={() => {
                   setSelectedKey('SETUP')
                 }}>
                   <span className={`${styles.info3}`}>报名参赛</span>
                 </div>
               </div>
             </div>
+            <img
+              className={`${styles.img1_1}`}
+              src={
+                require('./assets/img/ps9n14pbcdforgv33e0zoqvuh0h0q7edlcm2521caac-0ce7-47bb-adf9-5e5d7e852d3b.png')
+              }
+            />
             <div className={`${styles.layer3} flex-col`}>
               <div className={`${styles.box1} flex-col`}>
                 <div className={`${styles.main2} flex-row justify-between`}>
@@ -47,13 +53,6 @@ const WebView : FC = () => {
                     className={`${styles.pic1}`}
                     src={
                       require('./assets/img/psx25cwaiwvu4zy4yhvnjotfenqkpn97e82e8b3-4e9a-49f1-a62b-2d50f86d7910.png')
-                    }
-                  />
-                  <div className={`${styles.group1} flex-col`} />
-                  <img
-                    className={`${styles.img2}`}
-                    src={
-                      require('./assets/img/psm71399i2u5wi7oo0b61im288h69iiunl0a39ab1d-ec70-4da6-8d66-1f6e55520a9e.png')
                     }
                   />
                 </div>
@@ -114,7 +113,7 @@ const WebView : FC = () => {
                   性上的关联程度来判断两者是否匹配。
                 </span>
               </div>
-              <div className={`${styles.outer5} flex-col`} onClick={()=>{
+              <div className={`${styles.outer5} flex-col`} onClick={() => {
                 window.open(`https://www.heywhale.com/home/competition/620b34c41f3cf500170bd6ca`)
               }}>
                 <span className={`${styles.word8}`}>报名入口</span>
@@ -137,7 +136,7 @@ const WebView : FC = () => {
                   的实体。
                 </span>
               </div>
-              <div className={`${styles.outer12} flex-col`} onClick={()=>{
+              <div className={`${styles.outer12} flex-col`} onClick={() => {
                 window.open(`https://www.heywhale.com/home/competition/620b34ed28270b0017b823ad`)
               }}>
                 <span className={`${styles.word8}`}>报名入口</span>
@@ -171,11 +170,11 @@ const WebView : FC = () => {
           </div>
         </div>
         <span className={`${styles.infoBox1}`}>
-          GLOBAL&nbsp;AI&nbsp;
+          HANGZHOU GLOBAL&nbsp;AI&nbsp;
           <br />
           INNOVATION&nbsp;CONTEST
         </span>
-        <span className={`${styles.txt4}`}>全球人工智能技术创新大赛&nbsp;</span>
+        <span className={`${styles.txt4}`}>杭州全球人工智能技术创新大赛&nbsp;</span>
         <img
           className={`${styles.pic2}`}
           src={
@@ -184,45 +183,45 @@ const WebView : FC = () => {
         />
         <div className={`${styles.main8} flex-col`}>
           <div className={`${styles.wrap1} flex-row`}>
-            <div className={`${styles.box7} flex-col`} 
-              style={{background:selectedKey==='COMPETITION' ? 'rgba(121, 124, 243, 1)' : 'transparent'}}
-              onClick={()=>{setSelectedKey('COMPETITION')}}
+            <div className={`${styles.box7} flex-col`}
+              style={{ background: selectedKey === 'COMPETITION' ? 'rgba(121, 124, 243, 1)' : 'transparent' }}
+              onClick={() => { setSelectedKey('COMPETITION') }}
             >
               <span className={`${styles.word12}`}>大赛介绍</span>
             </div>
             <div className={`${styles.box7} flex-col`}
-               style={{background:selectedKey==='SETUP' ? 'rgba(121, 124, 243, 1)' : 'transparent'}}
-               onClick={()=>{setSelectedKey('SETUP')}}
+              style={{ background: selectedKey === 'SETUP' ? 'rgba(121, 124, 243, 1)' : 'transparent' }}
+              onClick={() => { setSelectedKey('SETUP') }}
             >
               <span className={`${styles.word12}`}>赛道设置</span>
             </div>
             <div className={`${styles.box7} flex-col`}
-              style={{background:selectedKey==='PARTICIPANTS' ? 'rgba(121, 124, 243, 1)' : 'transparent'}}
-              onClick={()=>{setSelectedKey('PARTICIPANTS')}}
+              style={{ background: selectedKey === 'PARTICIPANTS' ? 'rgba(121, 124, 243, 1)' : 'transparent' }}
+              onClick={() => { setSelectedKey('PARTICIPANTS') }}
             >
               <span className={`${styles.word12}`}>参赛对象</span>
             </div>
             <div className={`${styles.box7} flex-col`}
-              style={{background:selectedKey==='GUESTS' ? 'rgba(121, 124, 243, 1)' : 'transparent'}}
-              onClick={()=>{setSelectedKey('GUESTS')}}
+              style={{ background: selectedKey === 'GUESTS' ? 'rgba(121, 124, 243, 1)' : 'transparent' }}
+              onClick={() => { setSelectedKey('GUESTS') }}
             >
               <span className={`${styles.word12}`}>竞赛嘉宾</span>
             </div>
             <div className={`${styles.box7} flex-col`}
-              style={{background:selectedKey==='INTRODUCTION' ? 'rgba(121, 124, 243, 1)' : 'transparent'}}
-              onClick={()=>{setSelectedKey('INTRODUCTION')}}
+              style={{ background: selectedKey === 'INTRODUCTION' ? 'rgba(121, 124, 243, 1)' : 'transparent' }}
+              onClick={() => { setSelectedKey('INTRODUCTION') }}
             >
               <span className={`${styles.word12}`}>赛制说明</span>
             </div>
             <div className={`${styles.box7} flex-col`}
-              style={{background:selectedKey==='PRIZES' ? 'rgba(121, 124, 243, 1)' : 'transparent'}}
-              onClick={()=>{setSelectedKey('PRIZES')}}
+              style={{ background: selectedKey === 'PRIZES' ? 'rgba(121, 124, 243, 1)' : 'transparent' }}
+              onClick={() => { setSelectedKey('PRIZES') }}
             >
               <span className={`${styles.word12}`}>奖项设置</span>
             </div>
             <div className={`${styles.box7} flex-col`}
-              style={{background:selectedKey==='OTHERS' ? 'rgba(121, 124, 243, 1)' : 'transparent'}}
-              onClick={()=>{setSelectedKey('OTHERS')}}
+              style={{ background: selectedKey === 'OTHERS' ? 'rgba(121, 124, 243, 1)' : 'transparent' }}
+              onClick={() => { setSelectedKey('OTHERS') }}
             >
               <span className={`${styles.word12}`}>其他说明</span>
             </div>
@@ -520,7 +519,7 @@ const WebView : FC = () => {
         </div>
         <div className={`${styles.main28} flex-col`}>
           <div className={`${styles.layer33} flex-col justify-between`}>
-            <div className={`${styles.box11} flex-col`} id='OTHERS'/>
+            <div className={`${styles.box11} flex-col`} id='OTHERS' />
             <span className={`${styles.paragraph10}`}>
               全球人工智能技术创新大赛组织委员会
               <br />
