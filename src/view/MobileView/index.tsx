@@ -456,18 +456,20 @@ const MobileView: FC = () => {
               <div className={`${styles.mod16} flex-col align-center`}>
                 <div className={`${styles.wrap2}`}>
                   <span className={`${styles.paragraph16}`}>
-                    2022全球人工智能技术创新大赛-算法挑战赛由中国人工智能学会、
+                    2022杭州全球人工智能技术创新大赛-算法挑战赛由中国人工智能学
                     <br />
                   </span>
                   <span className={`${styles.paragraph17}`}>
-                    杭州市人民政府主办，杭州市余杭区人民政府承办，浙江杭州未来
+                    会、杭州市人民政府主办，余杭区人民政府、杭州市委组织部（人才
                     <br />
-                    科技城管委会和京东零售具体承办。大赛将立足国际视野，聚焦前
+                    办）、杭州市科技局承办，浙江杭州未来科技城（海创园）管委会具
                     <br />
-                    沿科技与应用创新，推进人工智能领域的学术交流、人才培养、技
+                    体承办，京东零售协办。大赛将立足国际视野，聚焦前沿科技与应用
+                    <br />
+                    创新，推进人工智能领域的学术交流、人才培养、技术发展以及跨界
                     <br />
                   </span>
-                  <span className={`${styles.info16}`}>术发展以及跨界应用与融合,打造人工智能的人才交流平台与产业生<br />态圈。</span>
+                  <span className={`${styles.info16}`}>应用与融合打造人工智能的人才交流平台与产业生态圈。</span>
                 </div>
               </div>
               <div className={`${styles.mod17}`}>
