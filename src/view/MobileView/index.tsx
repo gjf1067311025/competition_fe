@@ -405,7 +405,7 @@ const MobileView: FC = () => {
               <img
                 className={`${styles.img6_1}`}
                 src={
-                  require('./assets/img/ps9n14pbcdforgv33e0zoqvuh0h0q7edlcm2521caac-0ce7-47bb-adf9-5e5d7e852d3b.png')
+                  require('./assets/img/rencai-logo.png')
                 }
               />
             </div>
