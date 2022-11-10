@@ -46,6 +46,12 @@ const WebView: FC = () => {
                 require('./assets/img/rencai-logo.png')
               }
             />
+            <img
+              className={`${styles.img1_2}`}
+              src={
+                require('./assets/img/yuhang-logo.png')
+              }
+            />
             <div className={`${styles.layer3} flex-col`}>
               <div className={`${styles.box1} flex-col`}>
                 <div className={`${styles.main2} flex-row justify-between`}>

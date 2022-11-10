@@ -408,6 +408,12 @@ const MobileView: FC = () => {
                   require('./assets/img/rencai-logo.png')
                 }
               />
+              <img
+                className={`${styles.img6_2}`}
+                src={
+                  require('./assets/img/yuhang-logo.png')
+                }
+              />
             </div>
             <div className={`${styles.main4} flex-row`}>
               <div className={`${styles.main5} flex-col`} onClick={() => {
